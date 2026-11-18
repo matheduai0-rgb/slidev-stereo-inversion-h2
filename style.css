@@ -1,0 +1,378 @@
+/* Hide Slidev's right-side Goto slide list dialog (#slidev-goto-dialog) */
+#slidev-goto-dialog,
+#slidev-goto-dialog .autocomplete-list {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* ---------- Light theme tokens (names kept from Week 1 so inline var(--…) still work) ---------- */
+:root {
+  --bg-dark: #ffffff;
+  --bg-card: #f7f9fc;
+  --fg-text: #1f2328;
+  --fg-dim: #616161;
+  --accent: #1565c0;
+  --cyan-accent: #0277bd;
+  --coral-accent: #c62828;
+  --emerald-accent: #2e7d32;
+  --amber-accent: #b26a00;
+  --blue-accent: #1565c0;
+  --red-bright: #c62828;
+  /* GeoGebra UI */
+  --ggb-blue: #1565c0;
+  --ggb-border: #d0d0d0;
+  --ggb-track: #bdbdbd;
+}
+
+.slidev-layout {
+  background-color: var(--bg-dark) !important;
+  color: var(--fg-text) !important;
+  font-family: "Liberation Sans", "Noto Sans", "Inter", system-ui, sans-serif;
+  padding: 1.35rem 2rem !important;
+}
+
+.slidev-layout h1 {
+  color: var(--accent) !important;
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.65rem !important;
+  line-height: 1.25 !important;
+  border-bottom: 1.5px solid rgba(21, 101, 192, 0.22);
+  padding-bottom: 0.3rem;
+}
+
+.slidev-layout h2 {
+  color: var(--cyan-accent) !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.45rem !important;
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  font-size: 0.88rem;
+  line-height: 1.44;
+  color: var(--fg-text);
+}
+
+.slidev-layout strong { color: #111418; }
+
+/* Title Slide Typography */
+.title-kicker,
+.title-kicker p {
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  color: var(--accent) !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+}
+
+.title-main,
+.title-main p {
+  font-size: 2.05rem !important;
+  font-weight: 800 !important;
+  color: var(--fg-text) !important;
+  line-height: 1.25 !important;
+  margin-top: 0.65rem !important;
+  margin-bottom: 0 !important;
+}
+
+.title-sub,
+.title-sub p {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  color: var(--cyan-accent) !important;
+  line-height: 1.4 !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+.title-meta,
+.title-meta p {
+  font-size: 0.9rem !important;
+  color: var(--fg-dim) !important;
+  line-height: 1.6 !important;
+  margin-top: 1.75rem !important;
+  margin-bottom: 0 !important;
+}
+
+.slidev-layout ol,
+.slidev-layout ul {
+  padding-left: 1.2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.slidev-layout li {
+  margin-bottom: 0.26rem;
+}
+
+.just {
+  color: var(--amber-accent);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.84em;
+}
+
+.qed {
+  color: var(--accent);
+  font-weight: bold;
+  margin-left: 0.3rem;
+}
+
+/* ---------- Content boxes: light tints with a coloured left rule ---------- */
+.thm-box {
+  background: #e8f1fb;
+  border-left: 3.5px solid var(--accent);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.def-box {
+  background: #eaf5ec;
+  border-left: 3.5px solid var(--emerald-accent);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.proof-box {
+  background: #fff8e6;
+  border-left: 3px solid #f0a020;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.35rem;
+  margin-bottom: 0.45rem;
+}
+
+.socratic-box {
+  background: #e3f4f8;
+  border-left: 3.5px solid var(--cyan-accent);
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.35rem;
+  margin-bottom: 0.55rem;
+}
+
+.socratic-title {
+  color: var(--cyan-accent);
+  font-weight: 700;
+}
+
+.thm-box p,
+.def-box p,
+.proof-box p,
+.socratic-box p,
+.latihan-box p,
+.exercise-box p {
+  margin-top: 0.15rem !important;
+  margin-bottom: 0.22rem !important;
+}
+
+.latihan-box,
+.exercise-box {
+  background: #fdecec;
+  border-left: 3.5px solid var(--red-bright);
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.35rem;
+  color: #5b1a1a;
+}
+
+.latihan-box li,
+.exercise-box li { color: #5b1a1a; }
+
+.latihan-box strong,
+.exercise-box strong {
+  color: var(--red-bright);
+}
+
+/* ---------- JSXGraph figures in GeoGebra style ---------- */
+.jxg-card {
+  background: #ffffff;
+  border: 1px solid var(--ggb-border);
+  border-radius: 4px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.jxgbox {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff !important;
+  border: none !important;
+  border-bottom: 1px solid #e6e6e6 !important;
+  border-radius: 0;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+.jxgbox svg text {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.JXGtext {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.JXGinfobox {
+  border-style: none;
+  border-width: 0;
+}
+
+.JXG_navigation {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 100;
+  background-color: transparent;
+  padding: 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* control strip below the drawing pad, like GeoGebra's slider objects */
+.jxg-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.55rem;
+  padding: 0.35rem 0.55rem 0.15rem;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.74rem;
+  color: #333333;
+  background: #ffffff;
+}
+
+.jxg-controls span { font-style: italic; }
+
+/* GeoGebra slider: thin grey track, round blue knob */
+.jxg-controls input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  background: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.jxg-controls input[type='range']::-webkit-slider-runnable-track {
+  height: 3px;
+  background: var(--ggb-track);
+  border-radius: 2px;
+}
+.jxg-controls input[type='range']::-moz-range-track {
+  height: 3px;
+  background: var(--ggb-track);
+  border-radius: 2px;
+}
+.jxg-controls input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: var(--ggb-blue);
+  border: 1px solid #0d3c75;
+  box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.18);
+}
+.jxg-controls input[type='range']::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--ggb-blue);
+  border: 1px solid #0d3c75;
+  box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.18);
+}
+
+/* flat GeoGebra-like buttons; the play button is a round icon */
+.jxg-btn {
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid var(--ggb-border);
+  border-radius: 4px;
+  padding: 0.12rem 0.5rem;
+  font-size: 0.72rem;
+  font-style: normal;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.jxg-btn:hover {
+  background: #f1f6fd;
+  border-color: var(--ggb-blue);
+}
+
+.jxg-btn.active {
+  background: var(--ggb-blue);
+  border-color: var(--ggb-blue);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.jxg-controls .jxg-btn:first-child {
+  min-width: 1.7rem;
+  border-radius: 999px;
+  color: var(--ggb-blue);
+  border-color: var(--ggb-blue);
+}
+.jxg-controls .jxg-btn.active:first-child { color: #ffffff; }
+
+/* algebra-view style readout */
+.jxg-readout {
+  background: #f6f7f9;
+  border: none;
+  border-top: 1px solid #ececec;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.72rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+  color: #212121;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.45;
+}
+
+.ma-table,
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.76rem;
+}
+
+.ma-table th,
+.slidev-layout table th {
+  background: #e8f1fb;
+  color: var(--accent);
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #d0d7de;
+  text-align: left;
+}
+
+.ma-table td,
+.slidev-layout table td {
+  padding: 0.32rem 0.5rem;
+  border: 1px solid #d0d7de;
+}
+
+.ma-table tr:nth-child(even),
+.slidev-layout table tr:nth-child(even) {
+  background: #f6f8fa;
+}
