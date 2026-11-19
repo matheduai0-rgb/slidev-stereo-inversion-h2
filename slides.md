@@ -76,3 +76,7 @@ src: ./pages/d5-three.md
 ---
 src: ./pages/09-three-inversions.md
 ---
+
+---
+src: ./pages/09b-isometry-tiling.md
+---

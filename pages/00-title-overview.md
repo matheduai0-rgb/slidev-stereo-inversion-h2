@@ -62,7 +62,7 @@ $$\mathbb{S}^2 \;\xrightarrow{\ \Phi\ }\; \mathbb{R}^2_\infty \;\xrightarrow{\ \
 <div v-click class="thm-box">
 
 - **Bagian IV (Kuliah 7–8):** garis hiperbolik sebagai tempat kedudukan ekuidistan $H_{p_1,p_2}$, kasus kanonik, normalisasi IVT, karakterisasi (Teorema 4.16). *Langkah 7–9.*
-- **Bagian V (Kuliah 9–10):** Lemma Pertukaran, Teorema Tiga Titik, **Teorema Tiga Inversi** (Teorema 4.20), konformalitas & orientasi. *Langkah 10–12.*
+- **Bagian V (Kuliah 9–10):** Lemma Pertukaran, Teorema Tiga Titik, **Teorema Tiga Inversi** (Teorema 4.20), konformalitas & orientasi; klasifikasi rotasi / pergeseran paralel / translasi pada ubin $\{4,5\}$. *Langkah 10–12.*
 
 </div>
 

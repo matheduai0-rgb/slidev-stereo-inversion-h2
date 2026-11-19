@@ -13,7 +13,7 @@
 | II | 4 | Peta terinduksi, inversi $I_C$, ketunggalan, induksi refleksi bola (3.2) — Langkah 1 | `d2-inversion`, `05`–`07` |
 | III | 5–6 | $l_{\mathbb{H}^2}$, isometri, lintasan terpendek, $d_{\mathbb{H}^2}$ (4.1–4.2 bag. 1) — Langkah 2–6 | `d3-poincare`, `h-02`–`h-04` |
 | IV | 7–8 | Garis hiperbolik $H_{p_1,p_2}$, Prop. 4.14, Lemma 4.15 (IVT), Teorema 4.16 — Langkah 7–9 | `d4-hlines`, `08` |
-| V | 9–10 | Lemma 4.17–4.18, Teorema 4.19–4.20, Akibat 4.21, sintesis 12 langkah — Langkah 10–12 | `d5-three`, `09` |
+| V | 9–10 | Lemma 4.17–4.18, Teorema 4.19–4.20, Akibat 4.21, sintesis 12 langkah — Langkah 10–12; klasifikasi $\operatorname{Iso}^+(\mathbb{H}^2)$ pada ubin $\{4,5\}$ | `d5-three`, `09`, `09b` |
 
 Bagian I–III berasal dari dek `slidev-week2-stereographic` dan `slidev-week3-poincare`; Bagian IV–V dikonversi dari `Lecture_Lee_Week4_…typ` dan `Lecture_Lee_Week5_…typ`.
 
@@ -26,6 +26,7 @@ Bagian I–III berasal dari dek `slidev-week2-stereographic` dan `slidev-week3-p
 | `JxgSymmetryIVT` | Lemma 4.15 | $f(\alpha)$ pada $[q_1,q_2]$, akar $\alpha_0$ (IVT), translasi ke $(\mp a, b)$ |
 | `JxgSwap` | Lemma 4.17 | $I_{H}(p_1) = p_2$, $I_H$ isometri & involusi |
 | `JxgThreeInversions` | Teorema 4.20 | algoritma Lee: $\psi_3 = I_3 I_2 I_1 \phi = \mathrm{id}$; 0/1/2/3 inversi |
+| `JxgIsometryTiling` | Klasifikasi (09b) | $\phi = I_M \circ I_L$ rotasi / pergeseran paralel / translasi & inversi pada ubin $\{p,q\}$ (segitiga $(2,p,q)$ dua warna); snap simetri, $\lvert\mathrm{tr}\rvert$ |
 
 Komponen Bagian I–III sama dengan dek Minggu 2 dan 3. Geometri: `lib/geom.ts` (bola, circline, sudut), `lib/hyp.ts` ($\mathbb{H}^2$, bisektor, inversi garis hiperbolik, Möbius), `lib/jxg.ts` (gaya GeoGebra).
 JSXGraph dipatok ke `1.10.1`; `vite.config.ts` memaksa pre-bundling JSXGraph agar `npm run dev` tidak blank.
