@@ -30,6 +30,7 @@ Bagian I–III berasal dari dek `slidev-week2-stereographic` dan `slidev-week3-p
 
 Komponen Bagian I–III sama dengan dek Minggu 2 dan 3. Geometri: `lib/geom.ts` (bola, circline, sudut), `lib/hyp.ts` ($\mathbb{H}^2$, bisektor, inversi garis hiperbolik, Möbius), `lib/jxg.ts` (gaya GeoGebra).
 JSXGraph dipatok ke `1.10.1`; `vite.config.ts` memaksa pre-bundling JSXGraph agar `npm run dev` tidak blank.
+Nomor slide di pojok kanan bawah (`global-top.vue`) dapat diklik: ketik nomor + Enter untuk lompat (Esc batal); tombol ‹ › maju/mundur satu slide. Tidak tampil di slide judul maupun ekspor PDF.
 
 ---
 
