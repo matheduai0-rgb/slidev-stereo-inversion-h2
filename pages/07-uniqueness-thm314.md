@@ -2,7 +2,7 @@
 
 <div class="thm-box">
 
-**Lemma 3.13 (Karakterisasi Ketunggalan Inversi $I_C$ — Lee).** Misalkan circline $C$ membelah $\mathbb{R}^2_\infty \setminus C$ menjadi dua komponen terhubung $R_1$ dan $R_2$. Jika suatu bijeksi $f: \mathbb{R}^2_\infty \to \mathbb{R}^2_\infty$ memenuhi: (1) $f(p) = p$ untuk semua $p \in C$; (2) $f(R_1) = R_2$; (3) $f$ memetakan circline ke circline; dan (4) $f$ mengawetkan sudut; **maka $f = I_C$**.
+**Lemma 3.13 (Karakterisasi Ketunggalan Inversi $I_C$ — Lee).** Misalkan circline $C$ membelah $\mathbb{R}^2_\infty \setminus C$ menjadi dua komponen terhubung $R_1$ dan $R_2$. Jika suatu bijeksi $f: \mathbb{R}^2_\infty \to \mathbb{R}^2_\infty$ memenuhi: (1) $f(p) = p$ untuk semua $p \in C$; (2) $f(R_1) = R_2$; (3) $f$ memetakan circline ke circline; dan (4) $f$ mengawetkan sudut *(Teorema 3.5, dikutip)*; **maka $f = I_C$**.
 
 - *Ide Bukti Lee:* Untuk $p \notin C$, konstruksi dua circline ortogonal yang berpotongan di $p$ dan $I_C(p)$. Karena keempat syarat mengunci kedua circline tersebut secara invarian, maka $f(p) = I_C(p)$.
 
@@ -10,39 +10,7 @@
 
 <div v-click class="socratic-box">
 
-<span class="socratic-title">Mengapa ini berguna?</span> Untuk membuktikan bahwa suatu peta $f$ **adalah** inversi $I_C$, kita tidak perlu menghitung koordinat: cukup periksa keempat syarat di atas. Teorema 3.14 dan Lemma 3.15 keduanya dibuktikan dengan cara ini.
-
-</div>
-
----
-
-# Teorema 3.14: Refleksi Bola Menginduksi Inversi Circline
-
-<div class="grid grid-cols-12 gap-4 items-start">
-
-<div class="col-span-7">
-
-<div class="thm-box">
-
-**Teorema 3.14 (Refleksi Bola Menginduksi Inversi Circline — Lee).** Setiap refleksi $\bar{r}_G$ pada lingkaran besar $G \subset \mathbb{S}^2$ menginduksi inversi $I_C = \Phi \circ \bar{r}_G \circ \Phi^{-1}$ pada circline $C = \Phi(G) \subset \mathbb{R}^2_\infty$.
-
-- **Bukti:** Peta $\phi = \Phi \circ \bar{r}_G \circ \Phi^{-1}$ memfiksasi $C = \Phi(G)$, mempertukarkan kedua belahan bola yang diproyeksikan ke $R_1, R_2$, memetakan circline ke circline (Teorema 3.4), dan mengawetkan sudut (Teorema 3.5). Berdasarkan Lemma 3.13, $\phi = I_C$! <span class="qed">∎</span>
-
-</div>
-
-<div v-click class="proof-box">
-
-**Perluasan (animasi):** untuk lingkaran **kecil** $\hat C = \Phi^{-1}(C)$ di bidang $\hat n \cdot x = h$, peran $\bar r_G$ diambil oleh inversi $\mathbb{R}^3$ pada bola berpusat $V = \hat n / h$ (puncak kerucut singgung) dengan $R^2 = 1/h^2 - 1$; bola ini tegak lurus $\mathbb{S}^2$, dan argumen Lemma 3.13 yang sama memberikan $\Phi \circ \rho_{\hat C} \circ \Phi^{-1} = I_C$.
-
-</div>
-
-</div>
-
-<div class="col-span-5">
-
-<JxgSphereReflectionInduced height="320px" />
-
-</div>
+<span class="socratic-title">Mengapa ini berguna?</span> Untuk membuktikan bahwa suatu peta $f$ **adalah** inversi $I_C$, kita tidak perlu menghitung koordinat: cukup periksa keempat syarat di atas. Lemma 3.15 dibuktikan dengan cara ini.
 
 </div>
 

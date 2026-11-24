@@ -163,7 +163,7 @@ Pilih tiga titik tak segaris $p_1, p_2, p_3$ dan bagi kasus menurut banyaknya $p
 
 **Akibat 4.21 (Setiap Isometri Hiperbolik Mengawetkan Sudut — Lee).** Setiap $\phi \in \operatorname{Iso}(\mathbb{H}^2)$ mengawetkan sudut antara kurva mulus di $\mathbb{H}^2$.
 
-- **Bukti:** $\phi$ komposisi $\le 3$ inversi (Teorema 4.20); setiap $I_C$ mengawetkan sudut (Akibat 3.12(b)); komposisi pengawet sudut mengawetkan sudut. <span class="qed">∎</span>
+- **Bukti:** $\phi$ komposisi $\le 3$ inversi (Teorema 4.20); setiap $I_C$ mengawetkan sudut (Akibat 3.12(b), bersandar pada Teorema 3.5 yang dikutip); komposisi pengawet sudut mengawetkan sudut. <span class="qed">∎</span>
 
 </div>
 

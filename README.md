@@ -5,12 +5,12 @@
 
 ---
 
-## 📚 Struktur (62 slide)
+## 📚 Struktur (57 slide)
 
 | Bagian | Kuliah | Isi (Lee) | Halaman |
 | --- | --- | --- | --- |
-| I | 3 | Proyeksi stereografis, circline, vektor singgung & sudut, konformalitas (3.1) | `d1-stereo`, `02`–`04` |
-| II | 4 | Peta terinduksi, inversi $I_C$, ketunggalan, induksi refleksi bola (3.2) — Langkah 1 | `d2-inversion`, `05`–`07` |
+| I | 3 | Proyeksi stereografis, circline, konformalitas (3.1, dikutip tanpa bukti) | `d1-stereo`, `02`–`04` |
+| II | 4 | Peta terinduksi, inversi $I_C$, ketunggalan, konjugasi (3.2) — Langkah 1 | `d2-inversion`, `05`–`07` |
 | III | 5–6 | $l_{\mathbb{H}^2}$, isometri, lintasan terpendek, $d_{\mathbb{H}^2}$ (4.1–4.2 bag. 1) — Langkah 2–6 | `d3-poincare`, `h-02`–`h-04` |
 | IV | 7–8 | Garis hiperbolik $H_{p_1,p_2}$, Prop. 4.14, Lemma 4.15 (IVT), Teorema 4.16 — Langkah 7–9 | `d4-hlines`, `08` |
 | V | 9–10 | Lemma 4.17–4.18, Teorema 4.19–4.20, Akibat 4.21, sintesis 12 langkah — Langkah 10–12; klasifikasi $\operatorname{Iso}^+(\mathbb{H}^2)$ pada ubin $\{4,5\}$ | `d5-three`, `09`, `09b` |
@@ -28,7 +28,7 @@ Bagian I–III berasal dari dek `slidev-week2-stereographic` dan `slidev-week3-p
 | `JxgThreeInversions` | Teorema 4.20 | algoritma Lee: $\psi_3 = I_3 I_2 I_1 \phi = \mathrm{id}$; 0/1/2/3 inversi |
 | `JxgIsometryTiling` | Klasifikasi (09b) | $\phi = I_M \circ I_L$ rotasi / pergeseran paralel / translasi & inversi pada ubin $\{p,q\}$ (segitiga $(2,p,q)$ dua warna); snap simetri, $\lvert\mathrm{tr}\rvert$ |
 
-Komponen Bagian I–III sama dengan dek Minggu 2 dan 3. Geometri: `lib/geom.ts` (bola, circline, sudut), `lib/hyp.ts` ($\mathbb{H}^2$, bisektor, inversi garis hiperbolik, Möbius), `lib/jxg.ts` (gaya GeoGebra).
+Komponen Bagian I–III sama dengan dek Minggu 2 dan 3. `JxgPlaneAngle`, `JxgSphereAngle`, `JxgConformalityProof`, dan `JxgSphereReflectionInduced` dipertahankan di `components/` tetapi tidak dipakai di slide saat ini. Geometri: `lib/geom.ts` (bola, circline, sudut), `lib/hyp.ts` ($\mathbb{H}^2$, bisektor, inversi garis hiperbolik, Möbius), `lib/jxg.ts` (gaya GeoGebra).
 JSXGraph dipatok ke `1.10.1`; `vite.config.ts` memaksa pre-bundling JSXGraph agar `npm run dev` tidak blank.
 Nomor slide di pojok kanan bawah (`global-top.vue`) dapat diklik: ketik nomor + Enter untuk lompat (Esc batal); tombol ‹ › maju/mundur satu slide. Tidak tampil di slide judul maupun ekspor PDF.
 

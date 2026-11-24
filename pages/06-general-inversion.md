@@ -76,7 +76,7 @@ $$\begin{aligned} I_{C_{0,r}} &= d_r \circ I \circ d_{1/r}, \\ I_{C_{p,r}} &= t_
 
 <div class="thm-box">
 
-**Proposisi 3.10 & Proposisi 3.11 (Sifat Inversi Satuan $I$ — Lee).** Karena $I = \Phi \circ \bar{r}_G \circ \Phi^{-1}$ (Proposisi 3.7), dan masing-masing dari $\Phi$, refleksi bola $\bar{r}_G$, serta $\Phi^{-1}$ memetakan antara circline dan lingkaran bola (Teorema 3.4) serta mengawetkan sudut (Teorema 3.5), maka **inversi satuan $I$ memetakan circline ke circline dan mengawetkan sudut**!
+**Proposisi 3.10 & Proposisi 3.11 (Sifat Inversi Satuan $I$ — Lee).** Karena $I = \Phi \circ \bar{r}_G \circ \Phi^{-1}$ (Proposisi 3.7), dan masing-masing dari $\Phi$, refleksi bola $\bar{r}_G$, serta $\Phi^{-1}$ memetakan antara circline dan lingkaran bola (Teorema 3.4) serta mengawetkan sudut (Teorema 3.5, dikutip tanpa bukti), maka **inversi satuan $I$ memetakan circline ke circline dan mengawetkan sudut**!
 
 </div>
 

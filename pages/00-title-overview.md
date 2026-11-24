@@ -49,8 +49,8 @@ $$\mathbb{S}^2 \;\xrightarrow{\ \Phi\ }\; \mathbb{R}^2_\infty \;\xrightarrow{\ \
 
 <div v-click class="thm-box">
 
-- **Bagian I (Kuliah 3):** proyeksi stereografis $\Phi$, circline (Teorema 3.4), vektor singgung & sudut, konformalitas (Teorema 3.5).
-- **Bagian II (Kuliah 4):** peta terinduksi, inversi $I_C$, faktorisasi, ketunggalan (Lemma 3.13), refleksi bola menginduksi inversi (Teorema 3.14). *Langkah 1.*
+- **Bagian I (Kuliah 3):** proyeksi stereografis $\Phi$, circline (Teorema 3.4), konformalitas (Teorema 3.5, dikutip).
+- **Bagian II (Kuliah 4):** peta terinduksi, inversi $I_C$, faktorisasi, ketunggalan (Lemma 3.13), konjugasi inversi (Lemma 3.15). *Langkah 1.*
 - **Bagian III (Kuliah 5–6):** panjang $l_{\mathbb{H}^2}$, isometri elementer, $I_C \in \operatorname{Iso}(\mathbb{H}^2)$, lintasan terpendek, $d_{\mathbb{H}^2}$. *Langkah 2–6.*
 
 </div>

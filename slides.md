@@ -22,10 +22,6 @@ src: ./pages/03-circlines-thm34.md
 ---
 
 ---
-src: ./pages/03b-tangent-angles.md
----
-
----
 src: ./pages/04-conformality.md
 ---
 

@@ -18,7 +18,7 @@ Proyeksi Stereografis $\Phi$ & Geometri Circline
 
 <div class="title-sub">
 
-Konstruksi $\Phi$, formula $\Phi$ dan $\Phi^{-1}$ (Prop. 3.2), circline (Teorema 3.4), vektor singgung & sudut (Lee 3.1), konformalitas (Teorema 3.5)
+Konstruksi $\Phi$, formula $\Phi$ dan $\Phi^{-1}$ (Prop. 3.2), circline (Teorema 3.4), konformalitas (Teorema 3.5, dikutip)
 
 </div>
 
