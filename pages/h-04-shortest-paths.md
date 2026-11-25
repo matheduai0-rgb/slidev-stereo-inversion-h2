@@ -151,6 +151,18 @@ yakni **$A$ dan $D$ bertukar**.
 
 ---
 
+# Eksperimen: Empat Kasus Bayangan di Bawah $I_{C_{q,r}}$
+
+<div class="text-[0.82rem] mb-1">
+
+Seret $q$ dan $a$ di sumbu-$x$; geser $\rho$, $r$, dan titik uji $p$. Kurva **biru** digambar dari **rumus slide sebelumnya**, dan baris terakhir mengukur jaraknya ke $I_C(p)$ untuk 64 titik $p \in \Gamma$. Tekan ▶: saat $\rho \to |s|$ lingkaran melalui $q$, dan bayangannya membesar menjadi **garis vertikal** (Kasus 2).
+
+</div>
+
+<JxgOrthoCirclineImage height="255px" />
+
+---
+
 # Proposisi 4.7 & Lemma 4.8: Normalisasi ke Sumbu-$y$ (Langkah 5)
 
 <div class="grid grid-cols-12 gap-4 items-start">

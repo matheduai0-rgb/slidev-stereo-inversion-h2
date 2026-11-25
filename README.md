@@ -5,7 +5,7 @@
 
 ---
 
-## 📚 Struktur (59 slide)
+## 📚 Struktur (60 slide)
 
 | Bagian | Kuliah | Isi (Lee) | Halaman |
 | --- | --- | --- | --- |
@@ -27,6 +27,7 @@ Bagian I–III berasal dari dek `slidev-week2-stereographic` dan `slidev-week3-p
 | `JxgSwap` | Lemma 4.17 | $I_{H}(p_1) = p_2$, $I_H$ isometri & involusi |
 | `JxgThreeInversions` | Teorema 4.20 | algoritma Lee: $\psi_3 = I_3 I_2 I_1 \phi = \mathrm{id}$; 0/1/2/3 inversi |
 | `JxgIsometryTiling` | Klasifikasi (09b) | $\phi = I_M \circ I_L$ rotasi / pergeseran paralel / translasi & inversi pada ubin $\{p,q\}$ (segitiga $(2,p,q)$ dua warna); snap simetri, $\lvert\mathrm{tr}\rvert$ |
+| `JxgOrthoCirclineImage` | Bayangan circline ⊥ sumbu-$x$ (h-04) | Empat kasus bayangan di bawah $I_{C_{q,r}}$ digambar dari rumus ($s = a - q_0$), ▶ $\rho \to \lvert s\rvert$ (lingkaran → garis), snap Kasus 1–4 & contoh Lemma 4.8, residu terhadap `invC` |
 
 Komponen Bagian I–III sama dengan dek Minggu 2 dan 3. `JxgPlaneAngle`, `JxgSphereAngle`, `JxgConformalityProof`, dan `JxgSphereReflectionInduced` dipertahankan di `components/` tetapi tidak dipakai di slide saat ini. Geometri: `lib/geom.ts` (bola, circline, sudut), `lib/hyp.ts` ($\mathbb{H}^2$, bisektor, inversi garis hiperbolik, Möbius), `lib/jxg.ts` (gaya GeoGebra).
 JSXGraph dipatok ke `1.10.1`; `vite.config.ts` memaksa pre-bundling JSXGraph agar `npm run dev` tidak blank.
