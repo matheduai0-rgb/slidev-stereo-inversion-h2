@@ -5,13 +5,13 @@
 
 ---
 
-## 📚 Struktur (57 slide)
+## 📚 Struktur (59 slide)
 
 | Bagian | Kuliah | Isi (Lee) | Halaman |
 | --- | --- | --- | --- |
 | I | 3 | Proyeksi stereografis, circline, konformalitas (3.1, dikutip tanpa bukti) | `d1-stereo`, `02`–`04` |
 | II | 4 | Peta terinduksi, inversi $I_C$, ketunggalan, konjugasi (3.2) — Langkah 1 | `d2-inversion`, `05`–`07` |
-| III | 5–6 | $l_{\mathbb{H}^2}$, isometri, lintasan terpendek, $d_{\mathbb{H}^2}$ (4.1–4.2 bag. 1) — Langkah 2–6 | `d3-poincare`, `h-02`–`h-04` |
+| III | 5–6 | $l_{\mathbb{H}^2}$, isometri, lintasan terpendek, persamaan bayangan inversi, $d_{\mathbb{H}^2}$ (4.1–4.2 bag. 1) — Langkah 2–6 | `d3-poincare`, `h-02`–`h-04` |
 | IV | 7–8 | Garis hiperbolik $H_{p_1,p_2}$, Prop. 4.14, Lemma 4.15 (IVT), Teorema 4.16 — Langkah 7–9 | `d4-hlines`, `08` |
 | V | 9–10 | Lemma 4.17–4.18, Teorema 4.19–4.20, Akibat 4.21, sintesis 12 langkah — Langkah 10–12; klasifikasi $\operatorname{Iso}^+(\mathbb{H}^2)$ pada ubin $\{4,5\}$ | `d5-three`, `09`, `09b` |
 

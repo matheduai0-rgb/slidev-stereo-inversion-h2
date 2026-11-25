@@ -50,6 +50,107 @@
 
 ---
 
+# Analisis Aljabar: Persamaan Bayangan Circline di Bawah Inversi
+
+<div class="socratic-box">
+
+<span class="socratic-title">Pertanyaan pemandu:</span> Jika $\Gamma$ diberikan oleh sebuah persamaan, **persamaan apa** yang dipenuhi oleh titik-titik $I(\Gamma)$? Bisakah kita *menghitung* bayangan inversi, alih-alih hanya tahu bahwa bayangannya circline?
+
+</div>
+
+<div class="grid grid-cols-12 gap-4 items-start">
+
+<div class="col-span-6">
+
+<div v-click class="def-box">
+
+**Persamaan umum circline.** $\Gamma:\; A(x^2+y^2) + Bx + Cy + D = 0$ dengan $B^2 + C^2 > 4AD$. Jika $A = 0$, $\Gamma$ adalah **garis**; jika $A \neq 0$, $\Gamma$ adalah lingkaran. Jika $D = 0$, $\Gamma$ melalui $0$.
+
+</div>
+
+<div v-click class="thm-box">
+
+**Proposisi (Tukar Koefisien).** **Hipotesis $H$:** $\Gamma$ seperti di atas, $I(p) = p/|p|^2$. **Kesimpulan $C$:** $I(\Gamma)$ memenuhi
+$$A + Bx' + Cy' + D(x'^2+y'^2) = 0,$$
+yakni **$A$ dan $D$ bertukar**.
+
+</div>
+
+</div>
+
+<div class="col-span-6">
+
+<div v-click>
+
+| $\Gamma$ | $I(\Gamma)$ |
+| --- | --- |
+| garis melalui $0$ ($A = D = 0$) | garis yang sama |
+| garis tak melalui $0$ ($A = 0 \neq D$) | lingkaran melalui $0$ |
+| lingkaran melalui $0$ ($A \neq 0 = D$) | garis tak melalui $0$ |
+| lingkaran tak melalui $0$ | lingkaran tak melalui $0$ |
+
+</div>
+
+<div v-click class="proof-box">
+
+1. Untuk $p' = I(p)$, berlaku $p = I(p') = p'/|p'|^2$ <span class="just">(Justifikasi: Involusi $I^{-1} = I$)</span>.
+2. Jadi $x = x'/|p'|^2$, $y = y'/|p'|^2$, dan $x^2+y^2 = 1/|p'|^2$ <span class="just">(Justifikasi: Aljabar)</span>.
+3. Substitusikan ke persamaan $\Gamma$, lalu kalikan dengan $|p'|^2 \neq 0$: $A + Bx' + Cy' + D|p'|^2 = 0$. Diskriminan $B^2 + C^2 - 4DA$ tidak berubah <span class="just">(Justifikasi: Substitusi)</span>. <span class="qed">∎</span>
+
+</div>
+
+</div>
+
+</div>
+
+---
+
+# Bayangan Circline Ortogonal Sumbu-$x$ di Bawah $I_{C_{q,r}}$
+
+<div class="grid grid-cols-12 gap-4 items-start">
+
+<div class="col-span-7">
+
+<div class="def-box">
+
+**Penyiapan.** $q = (q_0, 0)$, $r > 0$. Faktorisasi $I_{C_{q,r}} = t_q \circ d_r \circ I \circ d_{1/r} \circ t_{-q}$ (slide 06) memberi: geser ke $q$, terapkan Proposisi Tukar Koefisien, lalu skalakan dengan $r^2$. Tulis $s := a - q_0$.
+
+</div>
+
+<div v-click class="thm-box">
+
+1. **Lingkaran** $(x-a)^2 + y^2 = \rho^2$ dengan $s^2 \neq \rho^2$ $\;\mapsto\;$ lingkaran berpusat $\Bigl(q_0 + \dfrac{r^2 s}{s^2-\rho^2},\, 0\Bigr)$, berjejari $\dfrac{r^2 \rho}{|s^2-\rho^2|}$.
+2. **Lingkaran melalui $q$** ($\rho = |s|$) $\;\mapsto\;$ **garis vertikal** $x = q_0 + \dfrac{r^2}{2s}$.
+3. **Garis vertikal** $x = a$ ($s \neq 0$) $\;\mapsto\;$ lingkaran melalui $q$, berpusat $\Bigl(q_0 + \dfrac{r^2}{2s},\, 0\Bigr)$, berjejari $\dfrac{r^2}{2|s|}$.
+4. **Garis vertikal melalui $q$** ($s = 0$) $\;\mapsto\;$ dirinya sendiri.
+
+</div>
+
+</div>
+
+<div class="col-span-5">
+
+<div v-click class="proof-box">
+
+**Contoh (Lemma 4.8).** $\Gamma: (x-2)^2 + y^2 = 1$, $q = (1, 0) \in \Gamma$, $r = 1$, sehingga $s = 1$.
+
+- Kasus 2: $I_{C_{q,1}}(\Gamma) = \{x = 1 + \tfrac12\} = \{x = \tfrac32\}$.
+- Cek titik: $p = (2,1)$, $p - q = (1,1)$, $|p-q|^2 = 2$, sehingga $I_C(p) = q + \tfrac12(1,1) = (\tfrac32, \tfrac12)$ ✓.
+
+</div>
+
+<div v-click class="socratic-box">
+
+<span class="socratic-title">Jembatan:</span> Semua pusat bayangan terletak di sumbu-$x$. Jadi inversi berpusat di sumbu-$x$ memetakan garis hiperbolik ke garis hiperbolik, **tanpa argumen sudut**. Kasus 2 adalah langkah kunci Lemma 4.8 berikut.
+
+</div>
+
+</div>
+
+</div>
+
+---
+
 # Proposisi 4.7 & Lemma 4.8: Normalisasi ke Sumbu-$y$ (Langkah 5)
 
 <div class="grid grid-cols-12 gap-4 items-start">
@@ -91,7 +192,7 @@
 1. **Kasus 1 ($\Gamma$ garis vertikal $x = a$):** Translasi $\phi = t_{(-a,0)} \in \operatorname{Iso}(\mathbb{H}^2)$ memetakan $\Gamma$ ke sumbu-$y$ ($x = 0$) <span class="just">(Justifikasi: Contoh 4.1)</span>.
 2. **Kasus 2 ($\Gamma$ lingkaran berpusat pada sumbu-$x$):** Pilih titik potong $q \in \Gamma \cap (\text{sumbu-}x)$, dan bentuk lingkaran satuan $C = C_{q,1}$ berpusat di $q$ <span class="just">(Justifikasi: Teorema 4.4: $I_C \in \operatorname{Iso}(\mathbb{H}^2)$)</span>.
 3. Karena $q \in \Gamma$, inversi $I_C$ memetakan lingkaran $\Gamma$ menjadi **garis lurus** $I_C(\Gamma)$ <span class="just">(Justifikasi: Definisi 3.9 & Akibat 3.12: $I_C(q) = \infty$)</span>.
-4. Karena $\Gamma \perp (\text{sumbu-}x)$, $I_C(\text{sumbu-}x) = \text{sumbu-}x$, dan $I_C$ mengawetkan sudut, maka garis $I_C(\Gamma)$ tegak lurus sumbu-$x$ (**garis vertikal**)! Geser ke sumbu-$y$ dengan translasi $t_{(-c,0)}$ <span class="just">(Justifikasi: Akibat 3.12 & Kasus 1)</span>. <span class="qed">∎</span>
+4. Karena $\Gamma \perp (\text{sumbu-}x)$, $I_C(\text{sumbu-}x) = \text{sumbu-}x$, dan $I_C$ mengawetkan sudut, maka garis $I_C(\Gamma)$ tegak lurus sumbu-$x$ (**garis vertikal**)! Geser ke sumbu-$y$ dengan translasi $t_{(-c,0)}$ <span class="just">(Justifikasi: Akibat 3.12 & Kasus 1; alternatif tanpa sudut: Analisis Persamaan Bayangan, kasus 2, $c = q_0 + \tfrac{1}{2s}$)</span>. <span class="qed">∎</span>
 
 </div>
 

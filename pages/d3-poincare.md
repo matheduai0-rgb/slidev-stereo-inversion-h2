@@ -18,7 +18,7 @@ Setengah Bidang Atas Poincaré $\mathbb{H}^2$ & Lintasan Terpendek
 
 <div class="title-sub">
 
-Panjang $l_{\mathbb{H}^2}$, isometri elementer & $I_C \in \operatorname{Iso}(\mathbb{H}^2)$ (Langkah 2–3), Prop. 4.6 & Lemma 4.8 (Langkah 4–5), Teorema 4.9 & $d_{\mathbb{H}^2}$ (Langkah 6)
+Panjang $l_{\mathbb{H}^2}$, isometri elementer & $I_C \in \operatorname{Iso}(\mathbb{H}^2)$ (Langkah 2–3), Prop. 4.6, analisis persamaan bayangan inversi, Lemma 4.8 (Langkah 4–5), Teorema 4.9 & $d_{\mathbb{H}^2}$ (Langkah 6)
 
 </div>
 
